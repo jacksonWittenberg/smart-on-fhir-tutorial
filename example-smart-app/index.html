@@ -99,9 +99,14 @@
     </script>
   </body>
   <iframe
-    src="https://bluevectoraipartner.cloud.looker.com/embed/dashboards/70?Days%20From%20Surgery=%5B-14,30%5D&User%20Full%20Name=lname"
+    id = "looker"
+    src="https://bluevectoraipartner.cloud.looker.com/embed/dashboards/70?Days%20From%20Surgery=%5B-14,30%5D&User%20Full%20Name="
     width="1200"
     height="1000"
     frameborder="0">
 </iframe>
+  <script src="jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).onload(function(){$("looker").attr("src","https://bluevectoraipartner.cloud.looker.com/embed/dashboards/70?Days%20From%20Surgery=%5B-14,30%5D&User%20Full%20Name=");});
+    </script>
 </html>
